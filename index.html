@@ -18,7 +18,7 @@
   </style>
 </head>
 <body>
-  <h2> Co-operatefb Auto Sender (Complete Version)</h2>
+  <h2> Law Auto Sender (Complete Version)</h2>
   <input type="file" id="csvFile" accept=".csv" />
   
   <div id="controls">
@@ -135,6 +135,7 @@
       const templateParams = {
         Late: currentData.Late,
         email: currentData.email
+        Reference: currentData.Reference
       };
 
       emailjs.send(currentAccount.serviceID, currentAccount.templateID, templateParams)
